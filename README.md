@@ -1,11 +1,11 @@
-# JobX AI — Platform Overview
+# JobX AI - Platform Overview
 
 > An AI-powered job-application assistant. Users paste a job ad, and the system reconciles the
 > job title, extracts the relevant skills, asks position- and industry-specific questions through a
 > chat interface, and generates a tailored cover letter and resume as a styled PDF.
 
 This repository is the **map** of the venture. The product was built as a set of focused, independently
-deployable components — each lives in its own repository. This overview explains how they fit together,
+deployable components - each lives in its own repository. This overview explains how they fit together,
 what each one does, and where the machine-learning / NLP work sits.
 
 The code has been **de-branded for public release**: company names, backend hosts, analytics keys, cloud
@@ -69,13 +69,13 @@ flowchart TD
 
 ## Where the ML / NLP work lives
 
-- **Title reconciliation** ([job-title-classifier](https://github.com/beimichen/job-title-classifier)) — word embeddings,
+- **Title reconciliation** ([job-title-classifier](https://github.com/beimichen/job-title-classifier)) - word embeddings,
   k-nearest-neighbors classification over averaged token vectors, with an exact-match fast path.
-- **Skills & keyword extraction** ([resume-cover-letter-api](https://github.com/beimichen/resume-cover-letter-api)) —
+- **Skills & keyword extraction** ([resume-cover-letter-api](https://github.com/beimichen/resume-cover-letter-api)) -
   RAKE keyword extraction combined with curated skill lookups to tailor generated text to a specific ad.
-- **Conversational AI** ([rasa-job-assistant](https://github.com/beimichen/rasa-job-assistant)) — intent
+- **Conversational AI** ([rasa-job-assistant](https://github.com/beimichen/rasa-job-assistant)) - intent
   classification, entity extraction, and dialogue management with a custom action server.
-- **The data pipeline behind it** — a [labeled dataset](https://github.com/beimichen/job-positions-dataset) and a
+- **The data pipeline behind it** - a [labeled dataset](https://github.com/beimichen/job-positions-dataset) and a
   purpose-built [annotation tool](https://github.com/beimichen/text-annotation-tool) for producing NLP training data,
   with [automated conversation testing](https://github.com/beimichen/chatbot-selenium-tester) closing the loop.
 
