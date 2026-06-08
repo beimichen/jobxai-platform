@@ -1,4 +1,4 @@
-# JobX AI - Platform Overview
+# Job AI - Platform Overview
 
 > An AI-powered job-application assistant. Users paste a job ad, and the system reconciles the
 > job title, extracts the relevant skills, asks position- and industry-specific questions through a
@@ -83,5 +83,5 @@ flowchart TD
 
 ## Team
 
-JobX AI was built as a startup venture by **Bei Mi Chen**, **Danny Blaker**, and **Lane McDonald** (2019).
+Job AI was built as a startup venture by **Bei Mi Chen**, **Danny Blaker**, and **Lane McDonald** (2019).
 All component repositories are released under the MIT License.
